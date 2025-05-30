@@ -1,20 +1,39 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Turnos Kinesiología</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <h2>Paciente: Juan Pérez</h2>
+        <p>10:00 - 10:45 | Consultorio 1</p>
+      </ion-label>
+      <ion-button fill="outline" slot="end" color="primary">Detalles</ion-button>
+    </ion-item>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-item>
+      <ion-label>
+        <h2>Paciente: María Gómez</h2>
+        <p>11:00 - 11:45 | Consultorio 2</p>
+      </ion-label>
+      <ion-button fill="outline" slot="end" color="primary">Detalles</ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h2>Paciente: Pedro López</h2>
+        <p>12:00 - 12:45 | Consultorio 1</p>
+      </ion-label>
+      <ion-button fill="outline" slot="end" color="primary">Detalles</ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
